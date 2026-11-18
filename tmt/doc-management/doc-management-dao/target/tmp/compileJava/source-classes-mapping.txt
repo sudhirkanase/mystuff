@@ -1,0 +1,10 @@
+com/tmt/doc/management/dao/redis/RedisRepository.java
+ com.tmt.doc.management.dao.redis.RedisRepository
+com/tmt/doc/management/dao/conf/RedisConfiguration.java
+ com.tmt.doc.management.dao.conf.RedisConfiguration
+com/tmt/doc/management/dao/redis/IRedisRepository.java
+ com.tmt.doc.management.dao.redis.IRedisRepository
+com/tmt/doc/management/dao/beans/DocumentRedisBean.java
+ com.tmt.doc.management.dao.beans.DocumentRedisBean
+com/tmt/doc/management/dao/Library.java
+ com.tmt.doc.management.dao.Library

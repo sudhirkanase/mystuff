@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tmt.doc.management.dao.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-26T06:43:23" hostname="LAPTOP-39JDR1PM" time="0.005">
+  <properties/>
+  <testcase name="testSomeLibraryMethod" classname="com.tmt.doc.management.dao.LibraryTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

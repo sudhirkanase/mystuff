@@ -1,0 +1,39 @@
+/*plugins {
+	id 'org.springframework.boot' version("${springbootversion}")
+	//id 'io.spring.dependency-management' version("${dependencymanagementversion}")
+	id 'java'
+}
+*/
+
+/*
+group = 'com.tmt.taskmanagement'
+version = '0.0.1-SNAPSHOT'
+*/
+//sourceCompatibility = '1.8'
+
+/*
+repositories {
+	mavenCentral()
+}
+*/
+//sourceCompatibility = "${sourcecompatibility}"
+
+
+bootJar {
+  enabled = false
+}
+
+jar {
+  enabled = true
+}
+
+dependencies {
+	//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//runtime 'mysql:mysql-connector-java:5.1.46'
+}
+
+test {
+	useJUnitPlatform()
+}

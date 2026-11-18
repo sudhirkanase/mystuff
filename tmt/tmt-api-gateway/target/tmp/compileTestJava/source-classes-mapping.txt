@@ -1,0 +1,2 @@
+com/tmt/api/gateway/TmtApiGatewayApplicationTests.java
+ com.tmt.api.gateway.TmtApiGatewayApplicationTests

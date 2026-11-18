@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="AuthenticationManager"/>
+		<list key="findhistory">
+			<item value="AuthenticationManager"/>
+			<item value="authenticationManager"/>
+			<item value="table"/>
+			<item value="userCahce"/>
+			<item value="createNewTask"/>
+			<item value="loadTasks"/>
+		</list>
+	</section>
+</section>

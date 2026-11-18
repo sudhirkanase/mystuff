@@ -1,0 +1,2 @@
+com/tmt/discoveryservice/DiscoveryserviceApplication.java
+ com.tmt.discoveryservice.DiscoveryserviceApplication

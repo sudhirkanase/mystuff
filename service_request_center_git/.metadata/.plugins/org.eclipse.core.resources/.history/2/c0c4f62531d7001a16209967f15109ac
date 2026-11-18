@@ -1,0 +1,44 @@
+package com.wellsfargo.serv_req_center.task_management.validator;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+
+import org.springframework.stereotype.Component;
+
+import com.wellsfargo.serv_req_center.task_management.beans.ServiceRequestTask;
+
+@Component
+public class ServiceRequestValidator implements IServiceRequestValidator<ServiceRequestTask> {
+
+	@Override
+	public Set<String> validate(ServiceRequestTask task) {
+		// TODO Auto-generated method stub
+		Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+
+		Set<ConstraintViolation<ServiceRequestTask>> errors = validator.validate(task);
+		if (errors.isEmpty()) {
+			return Collections.EMPTY_SET;
+		}
+
+		StringBuilder errs = new StringBuilder();
+		errors.forEach(error -> {
+			errs.append(error.getPropertyPath() +"  -- " + error.getMessage());
+		});
+
+		// TODO new ServiceRequestException will hold the err information
+		throw new RuntimeException("Validation Exception --> " + errs);
+	}
+
+	
+	public static void main(String[] args) {
+		ServiceRequestTask task = new ServiceRequestTask();
+		
+		ServiceRequestValidator validator = new ServiceRequestValidator();
+		validator.validate(task);
+	}
+}

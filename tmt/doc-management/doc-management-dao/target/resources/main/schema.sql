@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS TMT_Documents;  
+CREATE TABLE TMT_Documents (  
+doc_id INT AUTO_INCREMENT  PRIMARY KEY,  
+doc_name VARCHAR(50) NOT NULL,  
+doc_type VARCHAR(50) NOT NULL,  
+doc_desc VARCHAR(50) NULL
+);  
